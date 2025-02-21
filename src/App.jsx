@@ -27,7 +27,7 @@ import ResetPassword from './components/ResetPassword/ResetPassword.jsx'
 function App() {
  const queryClient= new QueryClient()
   const router=createBrowserRouter([
-    {path:"/",element:<Layout/>,children:[
+    {path:"/ecommerceReact",element:<Layout/>,children:[
       {index:true,element:<Login/>},
       {path:"/register",element:<Register/>},
       {path:"/home",element:<ProtectedRouter><Home/></ProtectedRouter>},
@@ -37,7 +37,7 @@ function App() {
       {path:"/category",element:<ProtectedRouter><Category/></ProtectedRouter>},
       {path:"/products",element:<ProtectedRouter><Products/></ProtectedRouter>},
       {path:"/payment",element:<ProtectedRouter><Payment/></ProtectedRouter>},
-      {path:"/ecommerceReact/allorders",element:<ProtectedRouter><AllOrders/></ProtectedRouter>},
+      {path:"/allorders",element:<ProtectedRouter><AllOrders/></ProtectedRouter>},
       {path:"/wishList",element:<ProtectedRouter><WishList/></ProtectedRouter>},
       {path:"/forgetPassword",element:<ForgetPassword/>},
       {path:"/verifyCode",element:<VerifyCode/>},
@@ -52,7 +52,7 @@ function App() {
       <CartContextProvider>
       <WishListContextProvider>
       <Toaster position="top-right" reverseOrder={false}/>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} basename="/ecommerceReact"/>
       </WishListContextProvider>
       </CartContextProvider>
     </AuthContextProvider>
