@@ -37,7 +37,7 @@ function App() {
       {path:"/category",element:<ProtectedRouter><Category/></ProtectedRouter>},
       {path:"/products",element:<ProtectedRouter><Products/></ProtectedRouter>},
       {path:"/payment",element:<ProtectedRouter><Payment/></ProtectedRouter>},
-      {path:"/allorders",element:<ProtectedRouter><AllOrders/></ProtectedRouter>},
+      {path:"/ecommerceReact/allorders",element:<ProtectedRouter><AllOrders/></ProtectedRouter>},
       {path:"/wishList",element:<ProtectedRouter><WishList/></ProtectedRouter>},
       {path:"/forgetPassword",element:<ForgetPassword/>},
       {path:"/verifyCode",element:<VerifyCode/>},
