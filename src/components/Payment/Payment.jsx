@@ -43,7 +43,7 @@ export default function Payment() {
                     token:localStorage.getItem("token")
                 },
                 params:{
-                    url:"https://mariamhesham12.github.io/"
+                    url:"http://localhost:5173/ecommerceReact"
                 }
             })
             toast.success(data.status)
