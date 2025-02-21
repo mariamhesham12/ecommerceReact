@@ -43,7 +43,7 @@ export default function Payment() {
                     token:localStorage.getItem("token")
                 },
                 params:{
-                    url:"http://localhost:5173"
+                    url:"https://mariamhesham12.github.io/"
                 }
             })
             toast.success(data.status)
