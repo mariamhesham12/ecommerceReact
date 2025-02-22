@@ -105,7 +105,7 @@ export default function Navbar() {
               </li>
               <li>
                 <NavLink
-                  to={"/ecommerceReact/allorders"}
+                  to={"/allorders"}
                   className={({ isActive }) => 
                     ` block pt-2 px-3 rounded-sm lg:bg-transparent lg:p-0 
                     ${isActive ? 'text-green-500' : 'text-gray-900'}`
